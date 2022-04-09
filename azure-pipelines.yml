@@ -3,7 +3,7 @@
 trigger:
 - stage
 
-name: L_$(Date:yyyyMMdd)$(Rev:.r)
+name: L_$(Date:yyyyMMdd)$(Rev:.r)__alpha
 pool:
   name: default
 
@@ -18,7 +18,7 @@ stages: # Build - Test - *Deploy*
       steps:
         - task: NodeTool@0
           inputs:
-            versionSpec: '14.18.1'
+            versionSpec: '16.14.2'
           displayName: 'Install Node.js'
 
         - script: |
