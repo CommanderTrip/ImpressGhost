@@ -3,7 +3,7 @@
 trigger:
 - stage
 
-name: L_$(Date:yyyyMMdd)$(Rev:.r)__alpha
+name: L_$(Date:yyyyMMdd)$(Rev:.r)__beta
 pool:
   name: default
 
