@@ -1,0 +1,6 @@
+# IntelliJ
+.idea
+
+# dependencies
+node_modules
+
