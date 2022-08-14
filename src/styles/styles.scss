@@ -1,0 +1,283 @@
+﻿/* Font from google; formatted with type-scale.com */
+@import url('https://fonts.googleapis.com/css?family=Ruda:500|Roboto:400');
+
+:root {
+  /* Define Color Intention - DCI; From happyhues.co */
+  --background1: #16161a;
+  --background2: #242629;
+  --headline: #fffffe;
+  --paragraph: #94a1b2;
+
+  /* DCI - Illustration */
+  --draw-stroke: #010101;
+  --draw-main: #fffffe;
+  --draw-secondary: #72757e;
+  --draw-highlight: #7f5af0;
+  --draw-tertiary: #fa8411;
+
+  /* DCI - Button and Link*/
+  --button: #7f5af0;
+  --button-text: #fffffe;
+  --link: #7f5af0;
+
+  /* DCI - Cards */
+  --card-background: #16161a;
+  --card-headline: #fffffe;
+  --card-paragraph: #94a1b2;
+
+  /* DCI - Forms */
+  --form-bg: #fffffe;
+  --form-label: #16161a;
+  --form-input: #16161a;
+  --form-input-text: #fffffe;
+  --form-button: #7f5af0;
+  --form-button-text: #fffffe;
+
+  /* Font Type */
+  --heading-font: 'Roboto', sans-serif;
+  --body-font: 'Ruda', sans-serif;
+  --baseFontSize: 100%;
+  --h1: 2.488rem;
+  --h2: 2.074rem;
+  --h3: 1.728rem;
+  --h4: 1.44rem;
+  --h5: 1.2rem;
+  --smallText: 0.833rem;
+
+
+  /* Elevation */
+  --eLevel-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --eLevel-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --eLevel-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --eLevel-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+html {
+  font-size: 100%;
+}
+
+/*16px*/
+
+body {
+  background-color: var(--background1);
+  margin: 0;
+  font-family: var(--body-font);
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--headline);
+}
+
+p {
+  color: var(--paragraph);
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(--heading-font);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+small, .text_small {
+  font-size: var(--smallText);
+}
+
+a {
+  text-decoration: none;
+  color: var(--headline);
+  font-family: var(--heading-font);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Classes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.material-icons {
+  padding-right: 1rem;
+  text-decoration: none;
+}
+
+.navigation {
+  background-color: var(--background1);
+  position: fixed;
+}
+
+.top-nav {
+  height: 60px;
+  left: 0;
+  margin-bottom: 2px;
+}
+
+.side-nav {
+  height: 100vh;
+  width: 55px;
+  left: 0;
+  padding: 0 16px;
+  border-right: 1px solid transparent;
+}
+
+.top-nav-container {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  line-height: 60px;
+  border-bottom: 1px solid var(--draw-main);
+  justify-content: space-between;
+  align-items: center;
+  z-index: 101;
+}
+
+.side-nav-container {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  padding: 0 16px;
+  color: var(--draw-main);
+  left: 0;
+  height: calc(100% - 60px);
+  width: 55px;
+  border-right: 1px solid var(--draw-main) ;
+}
+
+.expanded {
+  width: 180px;
+}
+
+.site-title {
+  display: flex;
+  flex-direction: row;
+  width: 180px;
+  white-space: nowrap;
+  align-items: center;
+  padding: 0 16px;
+  border-right: 1px solid var(--draw-main);
+}
+
+.account-nav {
+  display: flex;
+  flex-direction: row;
+  padding-right: 2rem;
+  height: 66%;
+
+}
+
+.account-btn {
+  border: 1px solid var(--draw-secondary);
+  border-radius: 5px;
+  padding: 0 1rem;
+}
+
+.page-link {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.page-link-space {
+  margin-top: 1rem;
+}
+
+.account-nav .page-link:not(:first-child) {
+  margin-left: 20px;
+}
+
+.site-nav {
+  overflow: hidden;
+  padding: 1rem 1rem 1rem 1rem;
+  border-bottom: 2px solid var(--draw-main);
+}
+
+.side-nav-footer {
+  flex: 0 0 auto;
+}
+
+.filler {
+  flex: 1 1;
+}
+
+.page-content {
+  background-color: var(--background2);
+  height: 100vh;
+  display: flex;
+}
+
+.page-deliverable {
+  left: 88px;
+  width: calc(100% - 88px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.banner {
+  height: 240px;
+  width: 100%;
+}
+
+.banner img {
+  object-fit: fill;
+  width: inherit;
+  height: inherit;
+}
+
+.home-text {
+  padding: 1rem 16rem;
+  min-width: 30px;
+}
+
+.signup-form {
+  background-color: var(--draw-main);
+  color: var(--draw-stroke);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2px solid var(--draw-stroke);
+}
+
+.backlog {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Pseudo Classes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--draw-tertiary);
+}
+
+a:hover .material-icons{
+  color: var(--draw-tertiary);
+}
+
+.account-btn:hover {
+  border-color: var(--draw-tertiary);
+}
