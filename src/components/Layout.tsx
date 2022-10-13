@@ -12,13 +12,9 @@ const Layout = (props) => {
 
     const [expandState, setExpandState] = useState(false);
 
-    const expandToggle = () => {
-        setExpandState(!expandState);
-    }
-
     return (
         <>
-            <NavBar expandToggle={expandToggle}/>
+            <NavBar expandState={expandState} setExpandState={setExpandState} />
             <div className="page-content">
                 <SideBar expandState={expandState}/>
                 <Content page={props.children}/>
