@@ -1,10 +1,10 @@
 const ProjectList = () => {
 
-    return (
-        <div>
-            <p>Projects</p>
-        </div>
-    )
+	return (
+		<div>
+			<p>Projects</p>
+		</div>
+	)
 }
 
-export default ProjectList;
+export default ProjectList

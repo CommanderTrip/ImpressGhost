@@ -1,10 +1,10 @@
 const Login = () => {
 
-    return (
-        <div>
-            <p>Login</p>
-        </div>
-    )
+	return (
+		<div>
+			<p>Login</p>
+		</div>
+	)
 }
 
-export default Login;
+export default Login

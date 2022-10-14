@@ -1,11 +1,11 @@
 const AboutMe = () => {
 
-    return (
-        <div>
-            <p>About Me</p>
+	return (
+		<div>
+			<p>About Me</p>
 
-        </div>
-    );
+		</div>
+	)
 }
 
-export default AboutMe;
+export default AboutMe

@@ -1,18 +1,18 @@
-import placeholder from "../assets/placeholder2.jpg";    // Placeholder image
+import placeholder from "../assets/placeholder2.jpg"    // Placeholder image
 
 const Home = () => {
-    const handleClick = async () => {
-        alert("HI");
-    }
+	const handleClick = async () => {
+		alert("HI")
+	}
 
-    return (
-        <>
-            <div className={"banner"}>
-                <img src={placeholder} alt={"placeholder"}/>
-            </div>
-            <div className={"home-text"}>
-                <h1>Welcome</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+	return (
+		<>
+			<div className={"banner"}>
+				<img src={placeholder} alt={"placeholder"}/>
+			</div>
+			<div className={"home-text"}>
+				<h1>Welcome</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Id leo in vitae turpis massa sed elementum tempus egestas. Quisque egestas
                     diam in arcu cursus. Mattis rhoncus urna neque viverra justo nec. Proin fermentum leo vel orci. Nisl
                     pretium fusce id velit ut tortor pretium viverra suspendisse. Ullamcorper velit sed ullamcorper
@@ -28,10 +28,10 @@ const Home = () => {
                     vel pharetra. Id venenatis a condimentum vitae sapien. Convallis posuere morbi leo urna molestie.
                     Senectus et netus et malesuada fames ac turpis. Lacus laoreet non curabitur gravida arcu ac. Nulla
                     posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus.</p>
-            </div>
-            <button onClick={handleClick}>ClickME!</button>
-        </>
-    );
+			</div>
+			<button onClick={handleClick}>ClickME!</button>
+		</>
+	)
 }
 
-export default Home;
+export default Home
