@@ -1,9 +1,48 @@
-﻿@use "standards"; // Can import other sass files that get compiled to one in the end.
+﻿// Sass will compile all the scss files into one css!
+@use "standards"; // Can import other sass partials
+
+@import 'themes/standard-theme';
+
+/* Follow this style moving forward
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins',
+  'abstracts/placeholders';
+
+@import
+  'vendors/bootstrap',
+  'vendors/jquery-ui';
+
+@import
+  'base/reset',
+  'base/typography';
+
+@import
+  'layout/navigation',
+  'layout/grid',
+  'layout/header',
+  'layout/footer',
+  'layout/sidebar',
+  'layout/forms';
+
+@import
+  'components/buttons',
+  'components/carousel',
+  'components/cover',
+  'components/dropdown';
+
+@import
+  'pages/home',
+  'pages/contact';
+
+@import
+  'themes/theme',
+  'themes/admin';
+ */
 
 /* Font from google; formatted with type-scale.com */
 @import url('https://fonts.googleapis.com/css?family=Ruda:500|Roboto:400');
-
-
 
 :root {
   /* Define Color Intention - DCI; From happyhues.co */
@@ -268,8 +307,6 @@ a {
   justify-content: center;
 
 }
-
-
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Pseudo Classes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 

@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import {ReactNode} from "react"
 
 // Logging this page shows that its children are all the pages that can exist...
-// Is this bad for performance? The switch in App.js knows what to render though.
+// Is this bad for performance? The routes in App.tsx knows what to render though.
 const Content = ({page}: {page: ReactNode}) => {
 
 	return (

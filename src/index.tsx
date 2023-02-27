@@ -1,22 +1,14 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import Home from "./pages/Home"
 import reportWebVitals from "./reportWebVitals"
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Layout from "./components/Layout"
-import "./styles/styles.scss"
+import "./styles/main.scss"
+import App from "./App"
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 
 root.render(
 	<React.StrictMode>
-		<BrowserRouter>
-			<Layout>
-				<Routes>
-					<Route path={"/"} element={<Home/>}/>
-				</Routes>
-			</Layout>
-		</BrowserRouter>
+		<App/>
 	</React.StrictMode>
 )
 

@@ -11,7 +11,7 @@ const SideBar = ({expandState}: {expandState: boolean}) => {
 	const navLinks = ["/projects", "/about", "/backlog"]
 	const navIcons = ["construction", "person", "style"]
 
-	// When the expand state has changed, add or remove the class that expands the side bar
+	// When the expand state has changed, add or remove the class that expands the sidebar
 	useEffect(() => {
 		expandState ? sideBarRef.current?.classList.add("expanded") : sideBarRef.current?.classList.remove("expanded")
 	}, [expandState])
