@@ -1,0 +1,12 @@
+.bankcard {
+  background-image: linear-gradient(135deg, rgba(243, 80, 80, 0.4), #00000000);
+  background-size: cover;
+  border-radius: 10px;
+  aspect-ratio: 5/3;
+  cursor: pointer;
+}
+
+.bankcard__content {
+  display: grid;
+  padding: 16px;
+}

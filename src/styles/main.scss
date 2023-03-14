@@ -1,8 +1,4 @@
 ﻿// Sass will compile all the scss files into one css!
-@use "standards"; // Can import other sass partials
-
-@import 'themes/standard-theme';
-
 /* Follow this style moving forward
 @import
   'abstracts/variables',
@@ -40,6 +36,13 @@
   'themes/theme',
   'themes/admin';
  */
+@use "standards"; // Can import other sass partials
+
+@import 'themes/standard-theme';
+
+@import "components/bankcard";
+
+
 
 /* Font from google; formatted with type-scale.com */
 @import url('https://fonts.googleapis.com/css?family=Ruda:500|Roboto:400');
