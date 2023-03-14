@@ -15,17 +15,12 @@ const App = () => {
 
 	return (
 		<BrowserRouter>
-			<Layout theme={theme}>
+			<Layout theme={theme} switchTheme={switchTheme}>
 				<Routes>
 					<Route path={"/"} element={<Home data-theme={theme} />}/>
 					<Route path={"/about"} element={<AboutMe/>}/>
 					<Route path={"/projects"} element={<ProjectList/>}/>
 				</Routes>
-				<div>
-					<button onClick={switchTheme}>
-						Switch to {theme === "light" ? "dark" : "light"}
-					</button>
-				</div>
 			</Layout>
 		</BrowserRouter>
 	)

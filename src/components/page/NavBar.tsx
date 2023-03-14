@@ -1,15 +1,14 @@
 import {Link, NavLink} from "react-router-dom"
-import PropTypes from "prop-types"
-import {Dispatch, SetStateAction} from "react"
-
-
+import React, {Dispatch, SetStateAction} from "react"
 
 /**
  * Creates the Navbar at the top of the screen
  * @param expandToggle  The button to expand the sidebar exists here. We need access to change the "expand" state.
  * @return {JSX.Element}
  */
-const NavBar = ({expandState, setExpandState}: {expandState: boolean, setExpandState: Dispatch<SetStateAction<boolean>>}): JSX.Element => {
+const NavBar = ({expandState, setExpandState, switchThemeState}:
+	{expandState: boolean, setExpandState: Dispatch<SetStateAction<boolean>>, switchThemeState: () => void}):
+	JSX.Element => {
 
 	const navButtons = ["create account", "login"]	// The buttons that need to be created
 	const navLinks = ["/signup", "/login"]	// The page navigation to take the user
@@ -43,6 +42,11 @@ const NavBar = ({expandState, setExpandState}: {expandState: boolean, setExpandS
 					<span className="material-icons" style={{"cursor": "pointer"}} onClick={expandToggle}>menu</span>
 					<Link to={"/"}>Impress Ghost</Link>
 				</div>
+
+				{/* Theme switcher */}
+				<button onClick={switchThemeState}>
+					Change Theme
+				</button>
 
 				{/* The Navigation for the user account login*/}
 				<div className={"account-nav"}>

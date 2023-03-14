@@ -1,4 +1,5 @@
-import placeholder from "../assets/placeholder2.jpg"    // Placeholder image
+import placeholder from "../assets/placeholder2.jpg" // Placeholder image
+import BankCard from "../components/items/Cards/BankCard"
 
 const Home = () => {
 	const handleClick = async () => {
@@ -30,6 +31,7 @@ const Home = () => {
                     posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus.</p>
 			</div>
 			<button onClick={handleClick}>ClickME!</button>
+			<BankCard title={"Hello"} desc={"World"}/>
 		</>
 	)
 }
